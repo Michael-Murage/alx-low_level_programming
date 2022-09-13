@@ -13,3 +13,5 @@ if the last digit of n is less than 6 and not 0: the string and is less than 6 a
 4-print_alphabt.c prints the alphabet in lowercase, followed by a new line. Prints all the letters except q and e
 
 5-print_numbers.c prints all single digit numbers of base 10 starting from 0, followed by a new line.
+
+6-print_numberz.c prints all single digit numbers of base 10 starting from 0, followed by a new line.
