@@ -10,8 +10,11 @@ int main(void)
 
 	while (ch <= 'z')
 	{
-		putchar(ch);
-		putchar('\n');
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+			putchar('\n');
+		}
 		ch++;
 	}
 	return (0);
