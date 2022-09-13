@@ -9,3 +9,5 @@ if the last digit of n is 0: the string and is 0
 if the last digit of n is less than 6 and not 0: the string and is less than 6 and not 0
 
 3-print_alphabets.c prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+
+4-print_alphabt.c prints the alphabet in lowercase, followed by a new line. Prints all the letters except q and e
