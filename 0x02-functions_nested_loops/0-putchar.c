@@ -5,5 +5,5 @@
  */
 int main(void)
 {
-	putchar("_putchar\n");
+	#include "main.h";
 }
