@@ -2,15 +2,15 @@
 /**
  * print_last_digit - prints the last digit of a number.
  * @n: integer being checked
- * Return value of last digit
+ * Return: value of last digit
  */
 int print_last_digit(int n)
 {
 	int a;
 
-	if (n < 10 && n > -10)
+	if (n < 0)
 	{
-		return (n);
+		n = -n;
 	}
 	else
 	{
