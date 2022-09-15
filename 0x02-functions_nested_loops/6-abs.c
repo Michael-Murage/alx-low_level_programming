@@ -10,11 +10,11 @@ int _abs(int n)
 	{
 		int num = n * -1;
 
-		_putchar(num);
+		printf(num);
 	}
 	else
 	{
-		_putchar(n);
+		printf(n);
 	}
 	return (0);
 }
