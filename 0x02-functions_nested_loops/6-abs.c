@@ -10,10 +10,10 @@ int _abs(int n)
 	{
 		int num = n * -1;
 
-		return(num);
+		return (num);
 	}
 	else
 	{
-		return(n);
+		return (n);
 	}
 }
