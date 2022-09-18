@@ -7,7 +7,7 @@ int main(void)
 {
 	int i;
 
-	int i = 1;
+	i = 1;
 
 	printf("%d", i);
 	for (i = 2; i <= 100; i++)
