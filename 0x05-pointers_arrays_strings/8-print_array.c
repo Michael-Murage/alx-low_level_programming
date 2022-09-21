@@ -10,17 +10,21 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	if (*(a + 1) != '\0')
+	if (n > 0)
 	{
 		printf("%d", *a);
-	}
-
-	for (i = 1; i < n; i++)
-	{
-		if (i != '\0')
+		for (i = 1; i < n; i++)
 		{
-			printf(", %d", *(a + i));
+			if (i != '\0')
+			{
+				printf(", %d", *(a + i));
+			}
 		}
+	}
+	else
+	{
+		printf("\n");
+		return;
 	}
 	printf("\n");
 }
