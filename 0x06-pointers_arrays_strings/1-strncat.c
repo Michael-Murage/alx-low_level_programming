@@ -5,7 +5,7 @@
  * @dest: added to
  * @src: being added
  * @n: bytes delimiter
- * Return - char* 
+ * Return: a concatenated character
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -23,7 +23,8 @@ char *_strncat(char *dest, char *src, int n)
 		{
 			dest[i] = src[j];
 		}
-	}else if (n >= a)
+	}
+	else if (n >= a)
 	{
 		j = 0;
 		while (src[j] != '\0')
