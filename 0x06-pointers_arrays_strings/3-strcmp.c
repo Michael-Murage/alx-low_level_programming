@@ -15,9 +15,9 @@ int _strcmp(char *s1, char *s2)
 	int s2_len = strlen(s2);
 	int i, j;
 
-	for ( i = 0; i < s1_len; i++)
+	for (i = 0; i < s1_len; i++)
 	{
-		for ( j = 0; j < s2_len; j++)
+		for (j = 0; j < s2_len; j++)
 		{
 			if (s1[i] == s2[i])
 			{
