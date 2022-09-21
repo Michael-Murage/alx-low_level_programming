@@ -13,7 +13,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int s1_len = strlen(s1);
 	int s2_len = strlen(s2);
-	int i, j;
+	int i, j, res;
 
 	for (i = 0; i < s1_len; i++)
 	{
@@ -25,11 +25,13 @@ int _strcmp(char *s1, char *s2)
 			}
 			else if (s1[i] < s2[i])
 			{
-				return (-15);
+				res = s1[i] - s2[i];
+				return (res);
 			}
 			else if (s1[i] > s2[i])
 			{
-				return (15);
+				res = s1[i] - s2[i];
+				return (res);
 			}
 		}
 	}
