@@ -1,8 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
 /**
- * main - adds positive numbers
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
+ *
+ * Return: the int converted from the string
+ */
+
+/**
+ * main - adds two positive number
  * @argc: number of arguments
  * @argv: array of arguents
  *
@@ -10,27 +18,31 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j = 0;
+	int sum, num, i, j, k;
 
-	for (i = 0; i < argc; i++)
-	{
-		if (argc == 1)
-		{
-			printf("0\n");
-			return (0);
-		}
-		
-		if (!argv[1] || !argv[2] || !atoi(argv[1]) || !atoi(argv[2]))
-		{
-			printf("Error\n");
-			return (1);
-		}
-	}
+	sum = 0;
+
 	for (i = 1; i < argc; i++)
 	{
-		j += atoi(argv[i]);
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] > '9' || argv[i][j] < '0')
+			{
+				puts("Error");
+				return (1);
+			}
+		}
 	}
-	printf("%d\n", j);
+
+	for (k = 1; k < argc; k++)
+	{
+		num = atoi(argv[k]);
+		if (num >= 0)
+		{
+			sum += num;
+		}
+	}
+
+	printf("%d\n", sum);
 	return (0);
 }
-
