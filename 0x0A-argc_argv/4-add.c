@@ -10,7 +10,7 @@
  */
 
 /**
- * main - adds two positive number
+ * main: adds positive numbers
  * @argc: number of arguments
  * @argv: array of arguents
  *
