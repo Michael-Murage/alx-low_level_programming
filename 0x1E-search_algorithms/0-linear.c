@@ -1,13 +1,13 @@
-#include "search_algos.h";
+#include "search_algos.h"
 
 /**
- * searches for a value in an array
- *  of integers using the Linear search algorithm
- * 
- * @param array - data structure being searched
- * @param size - size of the array, number of elements
- * @param value - value being searched for in the data structure
- * @return int 
+ * linear_search - searches for a value in an array of
+ *                 integers using the Linear search algorithm
+ *
+ * @array: data structure being searched
+ * @size: size of the array, number of elements
+ * @value: value being searched for in the data structure
+ * Return: index where value is located
  */
 int linear_search(int *array, size_t size, int value)
 {
@@ -20,7 +20,7 @@ int linear_search(int *array, size_t size, int value)
 	for (i = 0; i < size; i++)
 	{
 		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-		if (array[i == value])
+		if (array[i] == value)
 		{
 			return (i);
 		}
